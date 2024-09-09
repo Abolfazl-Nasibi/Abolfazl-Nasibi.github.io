@@ -1,3 +1,4 @@
+if (window.innerWidth > 750){
 window.onscroll = function() {
     const navbar = document.getElementById("navbar");
     if (window.scrollY > 180) {
@@ -6,3 +7,4 @@ window.onscroll = function() {
         navbar.classList.remove("scrolled");
     }
 };
+}
