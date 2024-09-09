@@ -16,7 +16,9 @@ body {
 }
     
 .nigga {
-    position: absolute;
-    
+    width: 200px;
+    height: 200px;
+    background-color: #252525;
+    color: white;
 }
 
