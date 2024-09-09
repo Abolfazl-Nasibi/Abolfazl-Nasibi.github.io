@@ -336,8 +336,7 @@
     /* trend game card */
     .trending-game-card {
         background-color: var(--lightGray);
-        min-width: 150px;
-        max-width: 170px;
+        width: 130px;
         border-radius: 20px;
         position: relative;
         margin: 5px 5px;
@@ -463,8 +462,7 @@
     /* top-game-card styles */
     .top-game-card {
         background-color: var(--white);
-        min-width: 150px;
-        max-width: 170px;
+        width: 130px;
         border-radius: 20px;
         position: relative;
         display: flex;
