@@ -4,8 +4,9 @@
     --lightRedHovered : rgb(255, 100, 100) ;
     --blue : #0071f8;
     --lightBlue : #008AF8;
-    --lightGray : #EEEEEE;
+    --lightGray : #f3f3f3;
     --darkGray : #8D7A7A ;
+    --white : #ffffff;
 }
 
 *{
@@ -25,7 +26,7 @@ body {
 
 /* top navbar styles */ 
 .top-nav {
-    position: fixed;
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,13 +67,18 @@ body {
 .top-nav img{
     margin: 10px 8%;
     margin-right: 0;
+    width: 100px;
 }
 
 .top-nav.scrolled {
+    position: fixed;
     background-color: #0071f8;
-    margin: 0;
-    width: 100%;
+    margin: 0px 0px 0px 14px;
+    width: 98%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     box-shadow:  5px 5px 10px  rgba(0, 0, 0 , 0.2);
+    padding: 10px 0px;
 }
 
 /* top container styles */
@@ -273,16 +279,18 @@ body {
     letter-spacing: 0.2px;
 }
 
-.trending-container div:nth-child(2){
+.trending-top-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
+    padding-bottom: 50px    ;
 }
 
 .trending-container div:nth-child(2) span{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bolder;
+    letter-spacing: 0.09;
 }
 
 .trending-container div:nth-child(2) button{
@@ -292,10 +300,17 @@ body {
     padding: 15px 27px;
     border-radius: 30px;
 }
+.viewAll{
+    transition: all 0.1s;
+    box-sizing: border-box;
+}
+.viewAll:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0 , 0.3);
+}
 /* trend game cards container styles */
 .trending-game-cards-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 /* trend game card */
@@ -354,6 +369,7 @@ body {
     border-radius: 50%;
     margin: 8px 0 0;
     transition: all 0.3s;
+    margin-right: 10px;
 }
 
 .trending-game-price{
@@ -371,3 +387,114 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* top games container */
+.top-game-container{
+    margin: 250px auto 0px;
+    width: 99%;
+    padding: 100px 100px;
+    background-color: var(--lightGray);
+    border-radius: 150px;
+    
+}
+
+.top-game-container p{
+    color: var(--lightRedHovered);
+    font-size: 1.1rem;
+    font-weight: bolder;
+    letter-spacing: 0.2px;
+}
+
+.top-game-top-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 50px    ;
+}
+
+.top-game-container div:nth-child(2) span{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    letter-spacing: 0.08px;
+}
+
+.top-game-container .viewAll{
+    background-color: var(--lightRed);
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    padding: 15px 27px;
+    border-radius: 30px;
+}
+
+/* top-game card container styles*/
+.top-game-card-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* top-game-card styles */
+.top-game-card {
+    background-color: var(--white);
+    width: min-content;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.top-game-card img:first-child{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.top-game-card:hover .explore-btn{
+    background-color: var(--lightBlue);
+    outline-color: var(--lightBlue);
+}
+
+.top-game-card:hover .game-name-span{
+    color: var(--lightBlue);
+}
+
+
+.top-game-card div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+    
+}
+
+.top-game-card div:nth-child(3) div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-game-card div:nth-child(3) div span:first-child{
+    color : var(--darkGray);
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+}
+
+.top-game-card div:nth-child(3) div span:last-child{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 4px;
+    transition: all 0.3s;
+}
+
+.top-game-card button:last-child{
+    position: absolute;
+    background-color: var(--lightRed);
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    padding: 10px 14px;
+    border-radius: 30px;
+    bottom: -20px;
+    transition: all 0.3s;
+}
+
+
