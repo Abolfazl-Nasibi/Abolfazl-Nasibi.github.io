@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1.2px;
+}
+
+
+.btn{
+    text-transform: capitalize;
+    background-color: #008AF8;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.05rem;
+    color: white;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border: none;
+}
+
+.uppercased {
+    text-transform: uppercase;
+}
+
+/* .trending-game-card {
+    background-color: var(--lightGray);
+    width: min-content;
+    border-radius: 20px;
+}
+
+.trending-game-card:hover .buy-game-icon{
+    background-color: var(--lightBlue);
+    outline-color: var(--lightBlue);
+}
+
+.trending-game-card:hover .game-name-span{
+    color: var(--lightBlue);
+}
+
+.trending-game-card img:first-child{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.trending-game-card div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    
+}
+
+.trending-game-card div:nth-child(2) div{
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-game-card div:nth-child(2) div span:first-child{
+    color : var(--darkGray);
+    letter-spacing: 0.5px;
+}
+
+.trending-game-card div:nth-child(2) div span:last-child{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 4px;
+    transition: all 0.3s;
+}
+
+.trending-game-card div:nth-child(2) img{
+    background-color: var(--lightRed);
+    width: 25px;
+    height: 25px;
+    color: white;
+    outline: 10px solid var(--lightRed);
+    border-radius: 50%;
+    margin: 8px 0 0;
+    transition: all 0.3s;
+} */
