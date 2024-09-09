@@ -243,7 +243,7 @@
 
     .top-container-bottom-inf div{
         background-color: white;
-        width: 45%;
+        width: 40%;
         height: 200px;
         box-shadow: 5px 5px 10px  rgba(0, 0, 0 , 0.1);
         display: flex;
@@ -330,13 +330,14 @@
     .trending-game-cards-container{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
     }
     /* trend game card */
     .trending-game-card {
         background-color: var(--lightGray);
-        width: 180px;
+        min-width: 150px;
+        max-width: 170px;
         border-radius: 20px;
         position: relative;
         margin: 5px 5px;
@@ -456,13 +457,14 @@
     .top-game-card-container{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
     }
     /* top-game-card styles */
     .top-game-card {
         background-color: var(--white);
-        width: min-content;
+        min-width: 150px;
+        max-width: 170px;
         border-radius: 20px;
         position: relative;
         display: flex;
@@ -475,6 +477,7 @@
     .top-game-card img:first-child{
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        width: 100%;
     }
 
     .top-game-card:hover .explore-btn{
