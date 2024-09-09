@@ -24,6 +24,7 @@
         overflow-x: hidden;
         position: relative;
     }
+    /* navbar */
     .top-nav {
         position: absolute;
         display: flex;
@@ -34,6 +35,7 @@
         transition: margin 0.1s, width 0.1s, background-color 0.2s;
         z-index: 100;
         top: 0px;
+        transition: all 0.2s;
     }
     .top-nav ul{
         position: absolute;
@@ -56,6 +58,12 @@
         background-color: transparent;
         color: #252525;
         transition: background-color 0.2s;
+        width: 100%;
+        text-align: center;
+
+    }
+    .top-nav ul .btn.active{
+        color: var(--lightRedHovered);
     }
     .top-nav.scrolledMobile{
         position: fixed;
@@ -71,4 +79,450 @@
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
     }
+
+    .top-nav ul .btn:last-child {
+        background-color: transparent;
+        text-transform: uppercase ;
+        font-weight: bold;
+    }
+    /* hamburger menu */
+    .hamburger {
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        visibility: visible;
+      }
+      /* top container */
+    .top-container {
+    margin: 0 auto 500px;
+    width: 100%;
+    height: 1500px;
+    background: url(images/banner-bg.jpg);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0 200px;
+    
+    }
+
+      /* top container left info */
+    .top-container-left-inf{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 180px 20px 0px 7%;
+        margin-bottom: 50px;
+    }
+
+    .top-container-left-inf h2{
+        color: white;
+        font-size: 3.6rem;
+        font-weight: bolder;
+        margin: 15px 0;
+        text-align: center;
+    }
+    
+    .top-container-left-inf p:nth-child(1){
+        color: white;
+        font-size: 1.6rem;
+    }
+    
+    .top-container-left-inf p:nth-child(3){
+        color: white;
+        font-size: 1.2rem;
+        margin: 18px 0;
+        text-align: center;
+    }
+
+    /* search box styles */
+    .search-box-div{
+        margin: 60px 0 0 0;
+        display: flex;
+        justify-content: center;
+        height: 45px;
+    }
+
+    .search-box-div input{
+        width: 250px;
+        border: none;
+        padding: 0px 20px;
+        border-radius: 25px 0px 0px 25px;
+        font-size: 1.1rem;
+    }
+
+    .search-box-div input:focus{
+        outline: none;
+    }
+
+    .search-box-div button{
+        background-color: var(--lightRed);
+        border: none;
+        width: 140px;
+        border-radius: 0px 25px 25px 0px;
+        color: white;
+        font-weight: bolder;
+        font-size: 1.03rem;
+    }
+
+    .search-box-div button:hover{
+        background-color: var(--lightRedHovered);
+    }
+
+    /* top container right styles */
+    .top-container-right-inf{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        height: 80%;
+        margin-left: 10px;
+    }
+
+    /* assassin card styles */
+    .assassin-image-div{
+        position: relative ;
+        background-color: black;
+        height: 530px;
+        border-radius: 20px;
+        width: 420px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .assassin-image-div:hover{
+        transform: translate(-2px, -2px);
+        width: 430px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0 , 0.3);
+    }
+
+    .assassin-image-div img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+
+    }
+
+    .assassin-image-div span:first-child{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 5px 16px;
+        border-radius: 30px;
+        font-size: 1.7rem;
+        font-weight: bolder;
+        color: white;
+        background-color: #0071f8;
+    }
+
+    .assassin-image-div span:last-child {
+        position: absolute;
+        left: 15px; /* Adjust as needed */
+        bottom: 10px; /* Adjust as needed */
+        color: white;
+        background-color: var(--lightRed); /* Make sure this variable is defined in your CSS */
+        font-size: 2rem;
+        font-weight: bolder;
+        padding: 30px 20px; /* Adjust padding as needed */
+        border-radius: 50%; /* Makes the span circular */
+        text-align: center;
+    }
+
+    /* top container bottom styles */
+    .top-container-bottom-inf{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        top: 1450px;
+        padding: 0 0px;
+    }
+
+    .top-container-bottom-inf div{
+        background-color: white;
+        width: 45%;
+        height: 200px;
+        box-shadow: 5px 5px 10px  rgba(0, 0, 0 , 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        margin: 10px 10px;
+    }
+
+    .featured{
+        transition: all 0.2s;
+    }
+
+    .top-container-bottom-inf div:hover .featured{
+        background-color: var(--lightRed);
+    }
+
+    .top-container-bottom-inf div div{
+        background-color:  var(--blue);
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        box-shadow: none;
+        margin-top: 40px;
+    }
+
+    .top-container-bottom-inf div span{
+        font-weight: bolder;
+        margin-top: 20px;
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+        
+    }
+
+    /* trending games styles */
+    .trending-container{
+        margin: 250px auto 0px;
+        width: 100%;
+        padding: 0px 10px;
+    }
+
+    .trending-container p{
+        color: var(--lightRedHovered);
+        font-size: 1.1rem;
+        font-weight: bolder;
+        letter-spacing: 0.2px;
+        text-align: center;
+    }
+
+    .trending-top-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        gap: 20px;
+    }
+
+    .trending-container div:nth-child(2) span{
+        font-size: 2.5rem;
+        font-weight: bolder;
+        letter-spacing: 0.09;
+    }
+
+    .trending-container div:nth-child(2) button{
+        background-color: var(--lightRed);
+        font-weight: bold;
+        letter-spacing: 0.4px;
+        padding: 15px 27px;
+        border-radius: 30px;
+    }
+    .viewAll{
+        transition: all 0.1s;
+        box-sizing: border-box;
+    }
+    .viewAll:hover{
+        box-shadow: 0px 0px 10px rgba(0, 0, 0 , 0.3);
+    }
+    /* trend game cards container styles */
+    .trending-game-cards-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* trend game card */
+    .trending-game-card {
+        background-color: var(--lightGray);
+        width: 180px;
+        border-radius: 20px;
+        position: relative;
+        margin: 5px 5px;
+    }
+
+    .trending-game-card:hover .buy-game-icon{
+        background-color: var(--lightBlue);
+        outline-color: var(--lightBlue);
+    }
+
+    .trending-game-card:hover .game-name-span{
+        color: var(--lightBlue);
+    }
+
+    .trending-game-card img:nth-child(2){
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 100%;
+    }
+
+    .trending-game-card div:nth-child(3) {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+        
+    }
+
+    .trending-game-card div:nth-child(3) div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trending-game-card div:nth-child(3) div span:first-child{
+        color : var(--darkGray);
+        letter-spacing: 0.5px;
+        font-size: 1rem;
+    }
+
+    .trending-game-card div:nth-child(3) div span:last-child{
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding-top: 4px;
+        transition: all 0.3s;
+    }
+
+    .trending-game-card div:nth-child(3) img{
+        background-color: var(--lightRed);
+        width: 25px;
+        height: 25px;
+        color: white;
+        outline: 10px solid var(--lightRed);
+        border-radius: 50%;
+        margin: 8px 0 0;
+        transition: all 0.3s;
+        margin-right: 10px;
+    }
+
+    .trending-game-price{
+        position: absolute;
+        background-color: var(--lightBlue);
+        width: 60px;
+        height: 30px;
+        right: 10px;
+        top: 10px;
+        border-radius: 20px;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* top games container */
+    .top-game-container{
+        margin: 100px auto 0px;
+        width: 100%;
+        padding: 100px 10px;
+        background-color: var(--lightGray);
+        border-radius: 50px;
+        
+    }
+
+    .top-game-container p{
+        color: var(--lightRedHovered);
+        font-size: 1.1rem;
+        font-weight: bolder;
+        letter-spacing: 0.2px;
+        text-align: center;
+    }
+
+    .top-game-top-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 50px    ;
+        gap: 20px;
+    }
+
+    .top-game-container div:nth-child(2) span{
+        font-size: 2.5rem;
+        font-weight: bolder;
+        letter-spacing: 0.08px;
+    }
+
+    .top-game-container .viewAll{
+        background-color: var(--lightRed);
+        font-weight: bold;
+        letter-spacing: 0.4px;
+        padding: 15px 27px;
+        border-radius: 30px;
+    }
+
+    /* top-game card container styles*/
+    .top-game-card-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* top-game-card styles */
+    .top-game-card {
+        background-color: var(--white);
+        width: min-content;
+        border-radius: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 15px;
+        margin: 20px 0px;
+    }
+
+    .top-game-card img:first-child{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .top-game-card:hover .explore-btn{
+        background-color: var(--lightBlue);
+        outline-color: var(--lightBlue);
+    }
+
+    .top-game-card:hover .game-name-span{
+        color: var(--lightBlue);
+    }
+
+
+    .top-game-card div:nth-child(3) {
+        display: flex;
+        justify-content: center;
+        padding: 20px 20px;
+        
+    }
+
+    .top-game-card div:nth-child(3) div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-game-card div:nth-child(3) div span:first-child{
+        color : var(--darkGray);
+        letter-spacing: 0.5px;
+        font-size: 1rem;
+    }
+
+    .top-game-card div:nth-child(3) div span:last-child{
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding-top: 4px;
+        transition: all 0.3s;
+    }
+
+    .top-game-card button:last-child{
+        position: absolute;
+        background-color: var(--lightRed);
+        font-weight: bold;
+        letter-spacing: 0.4px;
+        padding: 10px 14px;
+        border-radius: 30px;
+        bottom: -20px;
+        transition: all 0.3s;
+    }
+
+
 }
