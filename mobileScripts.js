@@ -9,6 +9,7 @@ if (window.innerWidth < 750){
     window.addEventListener('scroll' , ()=>{
         if(window.scrollY > 250){
             navbarElem.classList.add('scrolledMobile')
+            console.log(navbarElem.classList);
         }else{
             navbarElem.classList.remove('scrolledMobile')
         }

@@ -23,6 +23,10 @@
     text-transform: uppercase;
 }
 
+.blue-color {
+    color: var(--blue);
+}
+
 /* .trending-game-card {
     background-color: var(--lightGray);
     width: min-content;
@@ -43,31 +47,31 @@
     border-top-right-radius: 20px;
 }
 
-.trending-game-card div:nth-child(2) {
+.trending-game-card div:nth-child(3) {
     display: flex;
     justify-content: space-between;
     padding: 20px 20px;
     
 }
 
-.trending-game-card div:nth-child(2) div{
+.trending-game-card div:nth-child(3) div{
     display: flex;
     flex-direction: column;
 }
 
-.trending-game-card div:nth-child(2) div span:first-child{
+.trending-game-card div:nth-child(3) div span:first-child{
     color : var(--darkGray);
     letter-spacing: 0.5px;
 }
 
-.trending-game-card div:nth-child(2) div span:last-child{
+.trending-game-card div:nth-child(3) div span:last-child{
     font-size: 1.2rem;
     font-weight: bold;
     padding-top: 4px;
     transition: all 0.3s;
 }
 
-.trending-game-card div:nth-child(2) img{
+.trending-game-card div:nth-child(3) img{
     background-color: var(--lightRed);
     width: 25px;
     height: 25px;
