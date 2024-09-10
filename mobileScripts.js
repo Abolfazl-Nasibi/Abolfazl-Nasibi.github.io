@@ -27,4 +27,5 @@ if (window.innerWidth < 750){
             hambFlag = false;
         }
     })
+    
 }
