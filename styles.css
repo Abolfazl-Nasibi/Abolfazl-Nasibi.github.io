@@ -26,6 +26,64 @@ a{
 body {
     background-color: white;
     position: relative;
+    overflow-x: hidden;
+}
+/* onload styles */
+.loader{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1001;
+    display: flex;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    backdrop-filter: blur(10px); /* Blurs the background behind the div */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for frosted glass effect */
+    color: white;
+}
+
+.loader.hidden{
+    display: none;
+}
+svg {
+ width: 10%;
+ transform-origin: center;
+ animation: rotate4 2s linear infinite;
+}
+
+circle {
+ fill: none;
+ stroke: hsl(214, 97%, 59%);
+ stroke-width: 2;
+ stroke-dasharray: 1, 200;
+ stroke-dashoffset: 0;
+ stroke-linecap: round;
+ animation: dash4 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate4 {
+ 100% {
+  transform: rotate(360deg);
+ }
+}
+
+@keyframes dash4 {
+ 0% {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+ }
+
+ 50% {
+  stroke-dasharray: 90, 200;
+  stroke-dashoffset: -35px;
+ }
+
+ 100% {
+  stroke-dashoffset: -125px;
+ }
 }
 
 /* top navbar styles */ 
@@ -762,3 +820,4 @@ body {
     font-size: 1.2rem;
     text-align: center;
 }
+
